@@ -38,7 +38,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BasketballGame from './BasketballGame';
 import Test from './Test';
-import { Practice } from './practice';
+// import Practice from './practice';
 // Array of route objects to make routes dynamic and easy to maintain
 const routeConfig = [
   { 
@@ -356,15 +356,15 @@ const routeConfig = [
     title: 'Basketball',
     footerContent: 'Act and Guess'
   },
-  { 
-    path: "/practice", 
-    element: <Practice />, 
-    backgroundColor: 'lightgoldenrodyellow', 
-    headerStyle: { backgroundColor: 'goldenrod', color: 'white' }, 
-    footerStyle: { backgroundColor: 'darkgoldenrod', color: 'white' },
-    title: 'Basketball',
-    footerContent: 'Act and Guess'
-  },
+  // { 
+  //   path: "/practice", 
+  //   element: <Practice />, 
+  //   backgroundColor: 'lightgoldenrodyellow', 
+  //   headerStyle: { backgroundColor: 'goldenrod', color: 'white' }, 
+  //   footerStyle: { backgroundColor: 'darkgoldenrod', color: 'white' },
+  //   title: 'Basketball',
+  //   footerContent: 'Act and Guess'
+  // },
 ];
 
 const DynamicBackground = ({ children }) => {

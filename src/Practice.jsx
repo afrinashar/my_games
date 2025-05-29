@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-export const Practice = () => {
+export default Practice = () => {
     const [first, setfirst] = useState(null)
     // const [result, setresult] = useState(null)
 
