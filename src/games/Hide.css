@@ -1,0 +1,93 @@
+.hide-game-container {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-left,
+.image-right {
+  width: 150px;
+  height: auto;
+}
+
+.board2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.cell2 {
+  width: 80px;
+  height: 80px;
+  background-color: #e9ecef;
+  position: relative;
+  cursor: url('../assets/hammer.png'), auto;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell2.correct {
+  background-color: green;
+}
+
+.cell2.incorrect {
+  background-color: red;
+}
+
+.perry {
+  background-image: url('../assets/perry.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transform: translateY(100%);
+  animation: pop-up 0.5s forwards;
+}
+
+@keyframes pop-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.score-card {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .cell2 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .image-left, .image-right {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell2 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .board2 {
+    gap: 5px;
+  }
+}

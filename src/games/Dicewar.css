@@ -1,0 +1,60 @@
+.game-container {
+    padding: 20px;
+  }
+  
+  .dice-card {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .dice-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dice-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  .result-card {
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn {
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .game-rules {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .dice-card {
+      margin-bottom: 20px;
+    }
+    
+    .game-container {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .dice-img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  

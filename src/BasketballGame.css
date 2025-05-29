@@ -1,0 +1,165 @@
+/* BasketballGame.css */
+
+/* Basic game container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2e7d32; /* Basketball court green */
+    text-align: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  /* Title */
+  .game-container h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #000;
+  }
+  
+  /* Scoreboard */
+  .scoreboard {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Court */
+  .court {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #388e3c;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Hoop */
+  .hoop {
+    position: absolute;
+    top: 20px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 50px;
+    z-index: 2;
+  }
+  
+  /* Basketball */
+  .basketball {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateX(-50%);
+    z-index: 13;
+  }
+  
+  /* Shoot Button */
+  .shoot-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shoot-btn:hover {
+    background-color: #fb8c00;
+    transform: scale(1.05);
+  }
+  
+  .shoot-btn:disabled {
+    background-color: #ffcc80;
+    cursor: not-allowed;
+  }
+  
+  /* Message */
+  .message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .court {
+      width: 200px;
+      height: 300px;
+    }
+  
+    .hoop {
+      width: 70px;
+      height: 35px;
+    }
+  
+    .basketball {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .shoot-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .scoreboard {
+      font-size: 1.2rem;
+    }
+  
+    .game-container h1 {
+      font-size: 2rem;
+    }
+  
+    .message {
+      font-size: 1.2rem;
+    }
+  }
+  /* Responsive Design */
+@media (max-width: 600px) {
+  .court {
+    width: 200px;
+    height: 300px;
+  }
+
+  .hoop {
+    width: 70px;
+    height: 35px;
+  }
+
+  .basketball {
+    width: 30px;
+    height: 30px;
+  }
+
+  .shoot-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .scoreboard {
+    font-size: 1.2rem;
+  }
+
+  .game-container h1 {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+  }
+}

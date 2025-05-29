@@ -1,0 +1,9 @@
+.tom{ 
+ width: 600px ;  
+    animation: mymove 2s ; margin: 0px  0px 0px 50px;
+  }
+  @keyframes mymove {
+    from {right: 100px;}
+    to {right: 10px;}
+  }
+  .jerry{ margin: 10px  0px  400px 100px; }.house{height: 60vh;}

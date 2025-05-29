@@ -1,0 +1,64 @@
+.hangman-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.word-display {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.word-letter {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hangman-stage {
+  font-size: 24px;
+  color: #888;
+}
+
+.letter-button {
+  font-size: 18px;
+  padding: 12px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.letter-button:disabled {
+  background-color: #96b7ff;
+  cursor: not-allowed;
+}
+
+.letter-button:hover {
+  background-color: #007bff;
+  color: rgb(1, 2, 77);
+}
+
+.hangman-container.text-success {
+  color: #28a745;
+}
+
+.hangman-container.text-danger {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .letter-button {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+ .hangman-container .word-letter {
+    font-size: 24px;
+  }
+}

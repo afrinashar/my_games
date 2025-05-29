@@ -1,0 +1,89 @@
+.connect-four-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .connect-four-board {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .connect-four-row {
+    display: flex;
+  }
+  
+  .connect-four-cell {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: #005296;
+    border: 2px solid #001279;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .connect-four-cell:hover {
+    background-color: #031d84;
+  }
+  
+  .connect-four-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .connect-four-turn {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .connect-four-winner {
+    font-size: 1.5rem;
+    color: #d32f2f; /* Red color for winner text */
+    margin-bottom: 20px;
+  }
+  
+  .connect-four-reset-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #00796b;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .connect-four-reset-button:hover {
+    background-color: #00796b;
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .connect-four-cell {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .connect-four-img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .connect-four-turn, .connect-four-winner {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,52 @@
+/* Set the container dimensions to fill the screen and adjust its appearance */
+.pong-game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87ceeb, #4682b4);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #000;
+}
+
+/* Paddle styling with smooth movement and responsiveness */
+.paddle {
+  position: absolute;
+  width: 2vw;
+  height: 10vh;
+  background-color: #ff6347;
+  border-radius: 15px;
+  left: 2vw;
+  transition: top 0.1s;
+}
+
+/* Ball with gradient for stylish effect */
+.ball {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  background: radial-gradient(circle at 50%, #ff4500, #ff6347);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Score display with larger text and a better position */
+.score {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Ensure smooth animations and transitions */
+.pong-game *,
+.pong-game *::before,
+.pong-game *::after {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}

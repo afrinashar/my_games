@@ -1,0 +1,68 @@
+.minesweeper-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.minesweeper-container .board {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.minesweeper-container .row {
+  display: flex;
+}
+
+.minesweeper-container .cell {
+  width: 40px;
+  height: 40px;
+  background-color: #99ccff;
+  border: 2px solid #003366;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 5px;
+}
+
+.minesweeper-container.cell:hover {
+  background-color: #80bfff;
+}
+
+.minesweeper-container.cell.revealed {
+  background-color: #cceeff;
+  cursor: default;
+}
+
+.minesweeper-container.cell.flagged {
+  background-color: #ffcccb;
+}
+
+.minesweeper-container.cell.flagged::before {
+  content: '🚩';
+}
+
+.minesweeper-container .btn {
+  margin-top: 20px;
+  background-color: #7d69f2;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.minesweeper-container .btn:hover {
+  background-color: #ffffff;
+  color: #7d69f2;
+}
+
+@media (max-width: 768px) {
+ .minesweeper-container .cell {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}

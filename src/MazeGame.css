@@ -1,0 +1,165 @@
+/* Main styles */
+.maze-game {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.maze-grid {
+  display: inline-block;
+  border: 3px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.maze-row {
+  display: flex;
+}
+
+.maze-cell {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Path (0): Brighter pathway to see exit more clearly */
+.maze-cell.0 {
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.8); /* Slight glow for path */
+  position: relative;
+  animation: subtlePulse 2s infinite alternate; /* Subtle glow to guide player */
+}
+
+/* Pulse animation for pathway */
+@keyframes subtlePulse {
+  from {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  to {
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Wall (1): Keep walls green to signify obstacles */
+.maze-cell.1 {
+  background-color: #27ae60;
+  border: 2px solid #1e8449;
+  box-shadow: inset 0 0 5px #1e8449;
+  animation: distractionShake 1.5s infinite;
+}
+
+/* Distraction animation for walls */
+@keyframes distractionShake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(2px, 0); }
+  50% { transform: translate(0, 2px); }
+  75% { transform: translate(-2px, 0); }
+  100% { transform: translate(0, -2px); }
+}
+
+/* Player */
+.maze-cell.player {
+  background-color: #3498db;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Exit (E): Glowing exit path */
+.maze-cell.E {
+  background-color: #f39c12;
+  border: 2px solid #e67e22;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.7);
+  animation: exitGlow 1.5s infinite alternate;
+}
+
+/* Glow animation for exit */
+@keyframes exitGlow {
+  from {
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.7);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(243, 156, 18, 1);
+  }
+}
+
+/* Win and status */
+.status {
+  margin-top: 20px;
+}
+
+.win-message {
+  color: #2ecc71;
+  font-size: 1.5em;
+}
+
+.status-message {
+  font-size: 1.2em;
+}
+
+.control-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #2980b9;
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.difficulty-buttons {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .maze-cell {
+    width: 25px;
+    height: 25px;
+  }
+  .control-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+  .title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .maze-cell {
+    width: 20px;
+    height: 20px;
+  }
+  .control-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+}

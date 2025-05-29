@@ -1,0 +1,85 @@
+.catch-game-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #b4eba4;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .score, .misses {
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .game-over-image {
+    width: 250px;
+    margin: 20px auto;
+  }
+  
+  .game-over-text {
+    font-size: 2rem;
+    color: #dc3545;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .basket {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('../src/assets/basket.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10; /* Ensures the basket is above other elements */
+    transition: left 0.1s ease-in-out;
+  }
+  
+  .apple {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('../src/assets/apple.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: top 0.1s ease-in-out;
+  }
+  
+  .restart-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .basket, .apple {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .restart-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .game-over-text {
+      font-size: 1.5rem;
+    }
+  }
+  

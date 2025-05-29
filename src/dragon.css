@@ -1,0 +1,15 @@
+.tom{ 
+    width: 600px ;  
+       animation: mymove 2s ; margin: 0px  0px 0px 50px;
+        
+.btn-success:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+/* Game background */
+.game-background {
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}

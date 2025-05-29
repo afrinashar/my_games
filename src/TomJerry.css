@@ -1,0 +1,63 @@
+.tom {
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  animation: tomMove 2s ease-in-out infinite;
+}
+
+@keyframes tomMove {
+  from {
+    left: 100px;
+  }
+  to {
+    left: 10px;
+  }
+}
+
+.jerry-container {
+  bottom: 20px;
+  right: 0;
+}
+
+.jerry {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+}
+
+.jerry-move {
+  animation: jerryMove 2s linear infinite;
+}
+
+@keyframes jerryMove {
+  0% {
+    right: 90;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tom {
+    width: 40%;
+  }
+
+  .jerry {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tom {
+    width: 30%;
+  }
+
+  .jerry {
+    max-width: 80px;
+  }
+}

@@ -1,0 +1,87 @@
+/* Container styling */
+.simon-game-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* Header styling */
+.simon-game-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Flex layout for color buttons */
+.color-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Color button styling */
+.color-button {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.color-button.flash {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Start button styling */
+.start-button {
+  background-color: #AD4E00;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .color-button {
+    width: 90px;
+    height: 90px;
+  }
+
+  .start-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .simon-game-container {
+    padding: 15px;
+  }
+
+  .start-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}

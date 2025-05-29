@@ -1,0 +1,82 @@
+.arithmetic-game {
+  background-color: #f7f9fc;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin: auto;
+}
+
+.score-timer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #eaf0f8;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-display span, .time-left span {
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.equation-display h3 {
+  font-size: 2rem;
+  color: #264653;
+}
+
+.feedback-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.feedback-text.text-success {
+  color: #28a745;
+}
+
+.feedback-text.text-danger {
+  color: #e63946;
+}
+
+.difficulty-selector {
+  margin-top: 20px;
+}
+
+.btn-group .btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .arithmetic-game {
+    padding: 20px;
+  }
+
+  .score-timer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .equation-display h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-group .btn {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}

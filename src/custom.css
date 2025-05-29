@@ -1,0 +1,28 @@
+:root {
+    --primary: #000971;  
+    --secondary:#6e009a;
+  }
+  
+  body {
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: darken(var(--primary), 10%);
+    border-color: darken(var(--primary), 10%);
+  }
+  
+  .custom-select {
+    border-color: var(--primary);
+  }
+  
+  .custom-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+  }
+  

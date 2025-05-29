@@ -1,0 +1,113 @@
+/* Tic.css */
+
+.boardss {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Creates a 3-column grid */
+    gap: 10px; /* Adjusts gap between squares */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.square:hover {
+    background-color: #d1d1d1;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.fit-image {
+    width: 80%; /* Ensure images fit well in the square */
+    height: 80%;
+    object-fit: cover;
+}
+
+.ticBtn {
+    background-color: #fff;
+    color: #64068f;
+    border: 2px dashed #64068f;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ticBtn:hover {
+    background-color: #64068f;
+    color: white;
+}
+
+.status {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.tic {
+    background: linear-gradient(84deg, rgba(100,6,143,1) 13%, rgba(193,11,247,1) 37%, rgba(80,0,149,1) 100%);
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tic:hover {
+    background-color: white;
+    color: #64068f;
+    border-color: #64068f;
+}
+
+@media (max-width: 768px) {
+    .boardss {
+        grid-template-columns: repeat(3, 80px); /* Adjust grid for smaller screens */
+    }
+
+    .square {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ticBtn {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+    .status {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .boardss {
+        grid-template-columns: repeat(3, 60px); /* Further adjustments for smaller screens */
+        gap: 8px;
+    }
+
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ticBtn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .status {
+        font-size: 18px;
+    }
+}

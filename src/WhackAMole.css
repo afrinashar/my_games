@@ -1,0 +1,125 @@
+.whack-a-mole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.whack-a-mole h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #4a3d24;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #2d6a4f;
+  transform: scale(1.05);
+}
+
+.start-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+.mole-hole {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #2d6a4f;
+  border-radius: 15px;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.mole-hole.active {
+  background-color: #4a3d24;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.mole-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.score-board {
+  font-size: 18px;
+  color: #333;
+}
+
+.score-board p {
+  margin: 5px 0;
+}
+
+.game-over-message {
+  font-size: 20px;
+  color: #e74c3c;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
+    gap: 10px;
+  }
+
+  .start-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 240px;
+    gap: 8px;
+  }
+
+  .start-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .mole-hole {
+    border-radius: 10px;
+  }
+}
