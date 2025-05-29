@@ -38,6 +38,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BasketballGame from './BasketballGame';
 import Test from './Test';
+import  Practice   from './practice';
 // import Practice from './practice';
 // Array of route objects to make routes dynamic and easy to maintain
 const routeConfig = [
