@@ -34,6 +34,8 @@ const Hide = () => {
             className="image-left img-fluid"
             src="https://c.tenor.com/5TGzwoBrjQ0AAAAC/phineas-and-ferb-perry-the-platypus.gif"
             alt="Incorrect Choice"
+            width={50}
+            height={500}
           />
         )}
 

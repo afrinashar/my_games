@@ -24,7 +24,7 @@
 }
 
 .win {
-  background-color: #28a745;
+  background-color: green;
   color: white;
 }
 
@@ -44,7 +44,7 @@
   padding: 10px 20px;
   border: 2px solid #ffffff;
   border-radius: 15px;
-  background-color: rgb(255, 63, 63);
+  background-color: rgb(219, 37, 37);
   color: white;
   transition: box-shadow 0.3s ease;
 }
@@ -67,11 +67,11 @@
 
 /* Button for options */
 .option-btn {
-  background-color: #feb47b;
+  background-color: #ffffff;
   width: 100px;
   height: 100px;
   margin: 10px;
-  border-radius: 100px;
+  border-radius: 50px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -117,4 +117,7 @@
   .round-counter {
     font-size: 1.5rem;
   }
+}
+.game-containers{
+  background-color: rgb(0, 62, 0);
 }

@@ -1,5 +1,5 @@
 .hide-game-container {
-  background-color: #f7f9fc;
+  background-color: #ffffff;
   min-height: 100vh;
   padding: 20px;
 }
@@ -15,7 +15,7 @@
 .image-left,
 .image-right {
   width: 150px;
-  height: auto;
+  height: 150px;
 }
 
 .board2 {
@@ -78,6 +78,7 @@
 
   .image-left, .image-right {
     width: 100px;
+    height: 100px;
   }
 }
 

@@ -154,9 +154,9 @@ const routeConfig = [
     path: "/TicTac", 
     element: <Tictac />, 
     backgroundColor: '#9634ff78', 
-    headerStyle: { backgroundColor: '#B714EF', color: 'black' }, 
+    headerStyle: { backgroundColor: '#B714EF', color: 'white' }, 
     footerStyle: { backgroundColor: '#B714EF', color: 'black' },
-    title: 'Arithmetic Game',
+    title: 'Tic Tac Toe',
     footerContent: ''
   },
   { 

@@ -44,7 +44,7 @@ function RockPaperScissors() {
   };
 
   return (
-    <div className="game-container bg-gradient">
+    <div className="game-containers bg-gradient">
       <div className="scoreboard row mb-4 justify-content-center">
         {['Win', 'Tie', 'Lose'].map((label, idx) => (
           <div className="col-4" key={idx}>
