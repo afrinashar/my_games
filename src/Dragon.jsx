@@ -124,7 +124,7 @@ import   { useState, useEffect } from 'react';
       <div>
         
         {gameOver ? (
-          <div><h1>GAME OVER</h1>  <button className='btn btn-success'  onClick={refreshPage}>retry</button><img className='m-5' src={game} width={1000}></img></div>
+          <div><h1>GAME OVER</h1>  <button className='btn btn-success'  onClick={refreshPage}>retry</button><img className='m-5 batman-result' src={game}  ></img></div>
         ) : (
           <><h1 className='text-danger'>BATMAN v/s JOKER</h1>
           <h6> Score :{count}</h6>

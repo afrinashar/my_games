@@ -34,6 +34,9 @@ import Basketball from "./assets/basketball.png";
 
 const Dashboard = () => {
   const games = [
+     { img: tom, title: "Tom and jerry", link: "tomandjerry" },
+     { img: jb, title: "batman", link: "Batman" },
+
     { img: hide, title: "Find the Perry", link: "HideAndSeek" },
     { img: dice, title: "Lucky Roll", link: "Dice" },
     { img: sum, title: "Find Sum", link: "Arithmetic" },

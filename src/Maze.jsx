@@ -12,8 +12,11 @@ const generateRandomMaze = (rows, cols, complexity = 0.3) => {
     }
   }
   maze[0][0] = 'S'; // Start
-  maze[rows - 1][cols - 1] = 'E'; // End
+  maze[rows - 1][cols - 1] = 'E'; // End 
+   console.log(maze,"mazee");
+
   return maze;
+  
 };
 
 const MazeGame = () => {

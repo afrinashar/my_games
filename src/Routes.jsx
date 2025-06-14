@@ -70,7 +70,7 @@ const routeConfig = [
     footerContent: 'Enjoy the Hide and Seek Game'
   },
   { 
-    path: "/Tom", 
+    path: "/tomandjerry", 
     element: <TomJerry />, 
     backgroundColor: 'lightcoral', 
     headerStyle: { backgroundColor: 'darkred', color: 'white' }, 
@@ -237,7 +237,7 @@ const routeConfig = [
     backgroundColor: 'lightblue', 
     headerStyle: { backgroundColor: '#2d6a4f', color: 'white' }, 
     footerStyle: { backgroundColor: '#2d6a4f', color: 'white' },
-    title: 'Whack-A-Mole',
+    title: 'Catch the scooby',
     footerContent: 'Whack the Moles!'
   },
   { 

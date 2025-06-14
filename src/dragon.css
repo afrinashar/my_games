@@ -13,3 +13,7 @@
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
+.batman-result{
+  width: 100vw;
+  height: 60vh;
+}
